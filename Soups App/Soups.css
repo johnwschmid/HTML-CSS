@@ -1,0 +1,78 @@
+body {
+	background-color: #eaeaea
+}
+
+#header {
+	height: 68px;
+	width: 820px;
+	display: block;
+	background-color: #d5d5d5;
+	border-radius: 25px;
+	padding-top: 13px;
+	padding-left: 20px;
+}
+
+h1 {
+	margin: 0px;
+	font-size: 45px;
+	font-weight: 500;
+}
+
+#container {
+	height: 470px;
+	width: 840px;
+	padding: 20px 0px 0px 0px;
+}
+
+.innards {
+	display: inline-block;
+}
+
+ul {
+	padding-left: 15px;
+	margin-top: 0px;
+}
+
+h2 {
+	margin: 15px 0 0;
+}
+
+#navbar {
+	background-color: #d5d5d5;
+	height: 320px;
+	width: 210px;
+	vertical-align: top;
+	border-radius: 25px;
+	padding: 15px 0 0 15px;
+}
+
+#navbar a {
+	text-decoration: none;
+}
+
+#essays {
+	background-color: #9a9a9a;
+	height: 450px;
+	width: 575px;
+	border-radius: 25px;
+	margin-left: 20px;
+	padding: 0 0 0 15px;
+}
+
+#essays li {
+	margin-bottom: 20px;
+}
+
+#footer {
+	height:50px;
+	width: 820px;
+	padding-top: 15px;
+	padding-left: 20px;
+	background-color: #d5d5d5;
+	border-radius: 25px;
+}
+
+#footer p {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}

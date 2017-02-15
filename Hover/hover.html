@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hover Bitch!</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="hover.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('img').hover(function(){
+
+				var guy = $(this).attr('alt-src');
+				var	man = $(this).attr('src');
+
+				$(this).attr('src', guy);
+				$(this).attr('alt-src', man); },
+
+				function(){
+				var man = $(this).attr('alt-src');
+				var	guy = $(this).attr('src');
+
+
+				$(this).attr('src', man);
+				$(this).attr('alt-src', guy);
+				});
+		})
+	</script>
+</head>
+<body>
+	<img src="uchiha.jpeg" alt-src="naruto.jpeg">
+	<img src="uchiha2.jpeg" alt-src="naruto2.jpeg"> <br>
+	<img src="uchiha3.jpeg" alt-src="naruto3.jpeg">
+	<img src="uchiha4.jpeg" alt-src="naruto4.jpeg"> 
+</body>
+</html>

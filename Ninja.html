@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dissapearing Ninja</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('img').click(function(){
+				$(this).hide()
+			})
+
+			$('#restore').click(function(){
+				$('img').show()
+			})
+		})
+	</script>
+</head>
+<body>
+	<img src="itachi.jpeg">
+	<img src="itachi.jpeg">
+	<img src="itachi.jpeg">
+	<img src="itachi.jpeg">
+	<br>
+	<img src="itachi.jpeg">
+	<img src="itachi.jpeg">
+	<img src="itachi.jpeg">
+	<img src="itachi.jpeg">
+	<br>
+	<button id="restore">Restore</button>
+</body>
+</html>

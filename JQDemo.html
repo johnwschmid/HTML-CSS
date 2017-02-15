@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('#b1').click(function(){
+				$('#myParagraph').text('Hey there guy isnt this neat-o?!');
+			})
+
+			$('#b2').click(function(){
+				$('#b2').addClass('red');	
+			})
+
+			$('#b3').click(function(){
+				$('.red').css('background-color', 'red')	
+			})
+
+			$('#b4').click(function(){
+				$('#i1').val('One Fish, Two Fish')	
+			})
+
+			$('#b5').click(function(){
+				$('#i1').attr('type','radio')	
+			})
+
+			$('#b6').click(function(){
+				$('#p1').html('<strong>.html and .focus:</strong>')	
+			})
+
+			$('#b7').click(function(){
+				$('#b6').focus()	
+			})
+			
+			$('#b8').click(function(){
+				$('div').data("word","Oi you silly fuck stop clicking me yo!")
+			})
+
+			$('#b9').click(function(){
+				alert($('div').data("word"))
+			})
+
+			$('#b10').click(function(){
+				$('#b10').before('Hooray')	
+			})
+
+			$('#b11').click(function(){
+				$('#b11').after('Boo')	
+			})
+
+			$('#b12').click(function(){
+				$('.kids').append("<p>Moo</p>")
+			})
+
+			$('#b13').click(function(){
+				$('.kids').hide()
+			})
+
+			$('#b14').click(function(){
+				$('.kids').show()
+			})
+
+			$('#b15').click(function(){
+				$('#tog').toggle()
+			})
+
+			$('#b16').click(function(){
+				$('#fade').fadeOut()
+			})
+
+			$('#b17').click(function(){
+				$('#fade').fadeIn()
+			})
+
+			$('#b18').click(function(){
+				$('#slide').slideUp()
+			})
+
+			$('#b19').click(function(){
+				$('#slide').slideDown()
+			})
+
+			$('#b20').click(function(){
+				$('#togz').slideToggle()
+			})
+		});
+	</script>
+</head>
+<body>
+	<p id="myParagraph">.text:</p>
+	<button id="b1">Click me to change above text pal!</button>
+	<p>.addClass and .css:</p>
+	<button id="b2">Click to add a class to this button</button> <br>
+	<button id="b3">After adding class, click me to turn the above button red</button>
+	<br>
+	<br>
+	<p>.val and .attr:</p>
+	<input type="text" id="i1" value="Red Fish Blue Fish">
+	<br>
+	<button id="b4">Click to change di above text value mon.</button> <br>
+	<button id="b5">Click to change the above input to a radio button.</button>
+	<p id="p1">.html and .focus:</p>
+	<button id="b6">Click to make above ptag bold</button> <br>
+	<button id="b7">Click to focus the above button</button>
+	<p>.data:</p>
+	<button id="b8">Click to store data in said div</button>
+	<div></div>
+	<button id="b9">Click to see alert</button>
+	<p>.before and .after:</p>
+	<button id="b10">Click to add "Hooray" before this button</button> <br>
+	<button id="b11">Click to add "Boo" after this button</button>
+	<p>.append,.hide and .show:</p>
+	<button id="b12">Click to append "Moo" to div</button> <br>
+	<button id="b13">Click to hide 'Moo div'</button>
+	<button id="b14">Click to show 'Moo div'</button>
+	<div class="kids"></div>
+	<br>
+	<p id="tog">.toggle</p>
+	<button id="b15">Click to toggle the above title</button>
+	<p>.fadeIn and .fadeOut:</p>
+	<button id="b16">Click to fade out ptag</button>
+	<button id="b17">Click to fade in ptag</button>
+	<p id="fade">Merry Xmas herb</p>
+	<p>.slideUP and .slideDown:</p>
+	<button id="b18">Click to Slide Up</button>
+	<button id="b19">Click to Slide Down</button>
+	<p id="slide">SLIDERS</p>
+	<p>.slideToggle</p>
+	<button id="b20">Click to Slide Toggle</button>
+	<p id="togz">Toggle Trog</p>
+</body>
+</html>

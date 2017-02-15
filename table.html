@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('form').submit(function(){
+				$('#table').append('<tr>'+
+											'<td>'+$('#first').val()+'</td>' +
+											'<td>'+$('#last').val()+'</td>'	+
+											'<td>'+$('#email').val()+'</td>' +	
+											'<td>'+$('#phone').val()+'</td>' +
+																				'</tr');
+				return false;
+			})
+		})
+	</script>
+</head>
+<body>
+	<table id="table">
+		<thead>
+			<tr>
+				<th id="fn">First Name</th>
+				<th id="ln">Last Name</th>
+				<th id="ea">Email Address</th>
+				<th id="cn">Contact Number</th>
+			</tr>
+		</thead>
+	</table>
+	<h2>Add User</h2>
+	<form id="click">
+		First Name:
+		<input id="first" type="text" name="" value="" class="input"> <br>
+		Last Name:
+		<input id="last" type="text" name="" value="" class="input"> <br>
+		Email:
+		<input id="email" type="text" name="" value="" class="input"> <br>
+		Phone:
+		<input id="phone" type="text" name="" value="" class="input"> <br> <br>
+		<input type="submit" name="" value="Add User" id="btn">
+	</form>
+</body>
+</html>
